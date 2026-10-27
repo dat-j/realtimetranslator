@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realtime Translator — Chính sách quyền riêng tư / Privacy Policy</title>
+  <link rel="icon" href="app-icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="./">← Realtime Translator</a>
+    <p class="muted"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a> · <a href="#ja">日本語</a></p>
+
+    <!-- ================= Tiếng Việt ================= -->
+    <section id="vi">
+      <h1>Chính sách quyền riêng tư</h1>
+      <p class="muted">Cập nhật: 27/10/2026 · Áp dụng cho ứng dụng Realtime Translator – Live Subtitles &amp; Voice trên Windows</p>
+
+      <h2>Tóm tắt</h2>
+      <p>Realtime Translator nghe âm thanh đang phát trên máy bạn (hoặc micro, nếu bạn chọn), chuyển lời nói thành chữ, dịch và hiển thị phụ đề / đọc bản dịch. Chúng tôi (nhà phát triển) <strong>không có máy chủ riêng và không nhận bất kỳ dữ liệu nào của bạn</strong>. Dữ liệu chỉ rời khỏi máy khi bạn dùng một dịch vụ cloud do chính bạn chọn và cấu hình bằng API key của bạn.</p>
+
+      <h2>Âm thanh</h2>
+      <ul>
+        <li>App thu âm thanh hệ thống hoặc âm thanh của một app bạn chọn. Quyền <strong>micro</strong> chỉ được dùng khi bạn chọn nguồn "Microphone".</li>
+        <li>Âm thanh được xử lý trong bộ nhớ và <strong>không được lưu thành file</strong>.</li>
+        <li>Mặc định, nhận dạng giọng nói (Whisper) chạy hoàn toàn trên máy. Nếu bạn chọn "Nhận dạng trên cloud", các đoạn âm thanh lời nói được gửi tới địa chỉ API bạn nhập (ví dụ OpenAI, Groq).</li>
+      </ul>
+
+      <h2>Văn bản được gửi đi để dịch</h2>
+      <ul>
+        <li>Để dịch, app gửi câu vừa nhận dạng, vài câu trước đó làm ngữ cảnh và bảng thuật ngữ của bạn tới bộ dịch bạn chọn: <strong>Anthropic Claude</strong> (mặc định), một API kiểu OpenAI, hoặc Ollama / LM Studio chạy trên máy bạn (khi đó văn bản không rời khỏi máy). Chọn "Không dịch" thì không gửi gì.</li>
+        <li>Giọng đọc mặc định (Piper) và giọng có sẵn của Windows chạy trên máy. Nếu bạn chọn Azure AI Speech hoặc API giọng đọc kiểu OpenAI, bản dịch được gửi tới dịch vụ đó để tạo giọng nói.</li>
+        <li>Tính năng tóm tắt biên bản (Pro) gửi nội dung biên bản bạn chọn tới bộ dịch đang chọn.</li>
+        <li>Các dịch vụ này do bên thứ ba cung cấp và xử lý dữ liệu theo chính sách riêng của họ, ví dụ <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>, <a href="https://privacy.microsoft.com/privacystatement">Microsoft (Azure)</a>. App gọi trực tiếp từ máy bạn tới dịch vụ, không qua máy chủ trung gian của chúng tôi.</li>
+      </ul>
+
+      <h2>Dữ liệu lưu trên máy bạn</h2>
+      <ul>
+        <li><strong>Cài đặt</strong> lưu trong thư mục dữ liệu của app. <strong>API key</strong> được mã hoá bằng Windows DPAPI, chỉ giải mã được trên tài khoản Windows của bạn.</li>
+        <li><strong>Biên bản song ngữ</strong> (câu gốc và bản dịch) được lưu ở <code>Documents\RealtimeTranslator\Transcripts</code> khi bật "Lưu biên bản" (bật sẵn, tắt được ở mục Phụ đề). Bạn có thể xoá các file này bất cứ lúc nào.</li>
+        <li><strong>License key</strong> (nếu bạn nhập) được lưu và kiểm tra offline trên máy.</li>
+      </ul>
+
+      <h2>Kết nối mạng khác</h2>
+      <ul>
+        <li>Tải model nhận dạng giọng nói và giọng đọc lần đầu dùng, từ Hugging Face và GitHub. Không gửi dữ liệu cá nhân.</li>
+        <li>Kiểm tra / mua bản Pro qua Microsoft Store, xử lý theo <a href="https://privacy.microsoft.com/privacystatement">Tuyên bố về quyền riêng tư của Microsoft</a>.</li>
+      </ul>
+
+      <h2>Không thu thập</h2>
+      <p>Không tài khoản người dùng, không quảng cáo, không theo dõi (analytics/telemetry), không cookie.</p>
+
+      <h2>Người khác trong cuộc họp</h2>
+      <p>App xử lý lời nói của mọi người có trong âm thanh. Bạn chịu trách nhiệm tuân thủ quy định nơi làm việc và pháp luật địa phương, và thông báo cho người tham gia khi cần.</p>
+
+      <h2>Liên hệ</h2>
+      <p>Câu hỏi về quyền riêng tư: <a href="mailto:tranxuandat.dev@gmail.com">tranxuandat.dev@gmail.com</a></p>
+    </section>
+
+    <hr>
+
+    <!-- ================= English ================= -->
+    <section id="en" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: October 27, 2026 · Applies to the Realtime Translator – Live Subtitles &amp; Voice app for Windows</p>
+
+      <h2>Summary</h2>
+      <p>Realtime Translator listens to audio playing on your PC (or your microphone, if you choose), turns speech into text, translates it and shows subtitles / reads the translation aloud. We, the developer, <strong>run no servers and receive none of your data</strong>. Data leaves your PC only when you use a cloud service that you choose and configure with your own API key.</p>
+
+      <h2>Audio</h2>
+      <ul>
+        <li>The app captures system audio or the audio of an app you select. The <strong>microphone</strong> permission is used only when you choose the "Microphone" source.</li>
+        <li>Audio is processed in memory and <strong>never saved to a file</strong>.</li>
+        <li>By default, speech recognition (Whisper) runs entirely on your PC. If you choose "Cloud recognition", speech audio segments are sent to the API address you enter (for example OpenAI or Groq).</li>
+      </ul>
+
+      <h2>Text sent for translation</h2>
+      <ul>
+        <li>To translate, the app sends the recognized sentence, a few previous sentences as context and your glossary to the translator you choose: <strong>Anthropic Claude</strong> (default), an OpenAI-compatible API, or Ollama / LM Studio running on your PC (in which case text stays on your PC). With "No translation", nothing is sent.</li>
+        <li>The default voice (Piper) and the built-in Windows voices run on your PC. If you choose Azure AI Speech or an OpenAI-compatible voice API, the translation is sent to that service to generate speech.</li>
+        <li>The transcript summary feature (Pro) sends the transcript you select to the translator you have chosen.</li>
+        <li>These services are provided by third parties and handle data under their own policies, e.g. <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>, <a href="https://privacy.microsoft.com/privacystatement">Microsoft (Azure)</a>. The app calls them directly from your PC; nothing passes through servers of ours.</li>
+      </ul>
+
+      <h2>Data stored on your PC</h2>
+      <ul>
+        <li><strong>Settings</strong> are stored in the app data folder. <strong>API keys</strong> are encrypted with Windows DPAPI and can only be decrypted under your Windows account.</li>
+        <li><strong>Bilingual transcripts</strong> (original and translated sentences) are saved in <code>Documents\RealtimeTranslator\Transcripts</code> while "Save transcript" is on (on by default, can be turned off under Subtitles). You can delete these files at any time.</li>
+        <li>A <strong>license key</strong> (if you enter one) is stored and verified offline.</li>
+      </ul>
+
+      <h2>Other network access</h2>
+      <ul>
+        <li>Speech recognition models and voices are downloaded from Hugging Face and GitHub on first use. No personal data is sent.</li>
+        <li>Checking or buying Pro through the Microsoft Store, handled under the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
+      </ul>
+
+      <h2>What we don't collect</h2>
+      <p>No user accounts, no ads, no analytics or telemetry, no cookies.</p>
+
+      <h2>Other people in your meetings</h2>
+      <p>The app processes the speech of everyone in the audio. You are responsible for following your workplace rules and local law, and for informing participants where required.</p>
+
+      <h2>Contact</h2>
+      <p>Privacy questions: <a href="mailto:tranxuandat.dev@gmail.com">tranxuandat.dev@gmail.com</a></p>
+    </section>
+
+    <hr>
+
+    <!-- ================= 日本語 ================= -->
+    <section id="ja" lang="ja">
+      <h1>プライバシーポリシー</h1>
+      <p class="muted">最終更新日: 2026年10月27日 · Windows 用アプリ Realtime Translator – Live Subtitles &amp; Voice に適用されます</p>
+
+      <h2>概要</h2>
+      <p>Realtime Translator は、PC で再生中の音声（選択した場合はマイク）を聞き取り、文字に変換して翻訳し、字幕表示・読み上げを行います。開発者は<strong>サーバーを運営しておらず、お客様のデータを一切受け取りません</strong>。データが PC の外に送信されるのは、お客様ご自身が選択し、ご自身の API キーで設定したクラウドサービスを使う場合のみです。</p>
+
+      <h2>音声</h2>
+      <ul>
+        <li>アプリはシステム音声、または選択したアプリの音声を取り込みます。<strong>マイク</strong>の権限は、音声ソースに「マイク」を選んだ場合にのみ使用します。</li>
+        <li>音声はメモリ上で処理され、<strong>ファイルとして保存されることはありません</strong>。</li>
+        <li>既定では、音声認識（Whisper）はすべて PC 上で動作します。「クラウド音声認識」を選んだ場合、発話部分の音声が入力された API アドレス（例: OpenAI、Groq）に送信されます。</li>
+      </ul>
+
+      <h2>翻訳のために送信されるテキスト</h2>
+      <ul>
+        <li>翻訳のため、認識した文、文脈としての直前の数文、および用語集を、選択した翻訳エンジンに送信します: <strong>Anthropic Claude</strong>（既定）、OpenAI 互換 API、または PC 上で動作する Ollama / LM Studio（この場合テキストは PC の外に出ません）。「翻訳しない」を選んだ場合は何も送信しません。</li>
+        <li>既定の読み上げ音声（Piper）と Windows 標準の音声は PC 上で動作します。Azure AI Speech または OpenAI 互換の音声 API を選んだ場合、音声を生成するために訳文がそのサービスに送信されます。</li>
+        <li>記録の要約機能（Pro）は、選択した記録を選択中の翻訳エンジンに送信します。</li>
+        <li>これらのサービスは第三者が提供しており、各社のポリシーに従ってデータを扱います（例: <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>、<a href="https://openai.com/policies/privacy-policy/">OpenAI</a>、<a href="https://privacy.microsoft.com/privacystatement">Microsoft (Azure)</a>）。アプリは PC から各サービスに直接接続し、開発者のサーバーを経由しません。</li>
+      </ul>
+
+      <h2>PC に保存されるデータ</h2>
+      <ul>
+        <li><strong>設定</strong>はアプリのデータフォルダーに保存されます。<strong>API キー</strong>は Windows DPAPI で暗号化され、お客様の Windows アカウントでのみ復号できます。</li>
+        <li>「記録を保存」がオンの間（既定でオン、「字幕」で切り替え可能）、<strong>対訳の記録</strong>（原文と訳文）が <code>Documents\RealtimeTranslator\Transcripts</code> に保存されます。これらのファイルはいつでも削除できます。</li>
+        <li><strong>ライセンスキー</strong>（入力した場合）は PC 上に保存され、オフラインで検証されます。</li>
+      </ul>
+
+      <h2>その他のネットワーク接続</h2>
+      <ul>
+        <li>初回使用時に、音声認識モデルと読み上げ音声を Hugging Face と GitHub からダウンロードします。個人データは送信しません。</li>
+        <li>Microsoft Store での Pro の確認・購入は、<a href="https://privacy.microsoft.com/privacystatement">Microsoft プライバシー ステートメント</a>に従って処理されます。</li>
+      </ul>
+
+      <h2>収集しないもの</h2>
+      <p>ユーザーアカウント、広告、分析・テレメトリ、Cookie はありません。</p>
+
+      <h2>会議の他の参加者について</h2>
+      <p>アプリは音声に含まれるすべての人の発話を処理します。職場の規則や現地の法令を守り、必要に応じて参加者に知らせる責任はお客様にあります。</p>
+
+      <h2>お問い合わせ</h2>
+      <p>プライバシーに関するお問い合わせ: <a href="mailto:tranxuandat.dev@gmail.com">tranxuandat.dev@gmail.com</a></p>
+    </section>
+  </main>
+</body>
+</html>

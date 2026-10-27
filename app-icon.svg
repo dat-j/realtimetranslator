@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="208" fill="url(#bg)"/>
+  <!-- bong bóng phụ đề -->
+  <path d="M232 268 H792 Q852 268 852 328 V616 Q852 676 792 676 H468 L340 780 L356 676 H232 Q172 676 172 616 V328 Q172 268 232 268 Z" fill="#ffffff"/>
+  <!-- hai dòng phụ đề -->
+  <g stroke-linecap="round" stroke-width="56">
+    <path d="M292 410 H732" stroke="#4F46E5"/>
+    <path d="M292 538 H592" stroke="#A5B4FC"/>
+  </g>
+</svg>

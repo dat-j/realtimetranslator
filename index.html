@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realtime Translator — Phụ đề và giọng đọc dịch trực tiếp trên Windows</title>
+  <meta name="description" content="Dịch trực tiếp cuộc họp và video trên Windows: phụ đề nổi trên màn hình và giọng đọc bản dịch vào tai nghe. Nhận dạng giọng nói chạy ngay trên máy.">
+  <link rel="icon" href="app-icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img src="app-icon.svg" alt="" width="72" height="72">
+      <div>
+        <h1>Realtime Translator</h1>
+        <p class="lead">Dịch trực tiếp cuộc họp và video: phụ đề nổi trên màn hình, giọng đọc bản dịch vào tai nghe.</p>
+        <p class="lead muted" lang="en">Live translation for meetings and videos — floating subtitles plus a translated voice in your headphones.</p>
+        <p class="lead muted" lang="ja">会議や動画をリアルタイム翻訳 — 画面に字幕、ヘッドホンに翻訳音声。</p>
+      </div>
+    </header>
+
+    <p class="cta">
+      <span class="button">Sắp có trên Microsoft Store</span>
+    </p>
+
+    <img class="shot" src="screenshots/vi-trang-chinh.png" alt="Trang chính của Realtime Translator: hồ sơ Họp và Xem phim, chọn ngôn ngữ, phụ đề gần đây">
+
+    <section class="grid">
+      <div><h2>Nghe mọi app</h2><p>Dịch âm thanh đang phát trên máy: phần mềm họp, trình duyệt, trình phát video. Có thể chọn nghe riêng một app.</p></div>
+      <div><h2>Phụ đề + giọng đọc</h2><p>Phụ đề nổi trên mọi cửa sổ, giọng đọc bản dịch vào tai nghe. Bật/tắt từng thứ bằng phím tắt.</p></div>
+      <div><h2>Dịch theo từng câu thoại</h2><p>Mỗi câu được dịch ngay khi người nói dứt câu, có bản dịch tạm hiện trong lúc còn đang nói.</p></div>
+      <div><h2>Chạy trên máy hoặc cloud</h2><p>Nhận dạng giọng nói (Whisper) và giọng đọc (Piper) chạy ngay trên máy, tăng tốc bằng GPU. Bộ dịch: Claude, API kiểu OpenAI, hoặc Ollama / LM Studio offline.</p></div>
+      <div><h2>Tiếng Việt, Anh, Nhật</h2><p>Giao diện 3 ngôn ngữ. Dịch qua lại giữa tiếng Việt, Anh, Nhật, Hàn, Trung và nhiều thứ tiếng khác.</p></div>
+      <div><h2>Biên bản song ngữ</h2><p>Lưu lại câu gốc và bản dịch của mỗi buổi trên máy. Bản Pro tóm tắt biên bản bằng AI.</p></div>
+    </section>
+
+    <section>
+      <h2>Cần chuẩn bị gì?</h2>
+      <ul>
+        <li><strong>Bộ dịch:</strong> app không kèm sẵn bộ dịch trên cloud. Bạn dùng API key của chính mình (Anthropic Claude, OpenAI, Groq...) hoặc chạy Ollama / LM Studio miễn phí trên máy.</li>
+        <li><strong>Máy tính:</strong> Windows 10 (bản 2004 trở lên) hoặc Windows 11, 64-bit. Nên có card đồ họa (NVIDIA, AMD hoặc Intel) để nhận dạng giọng nói nhanh. Model tải về lần đầu khoảng 0,15–1,6 GB tuỳ lựa chọn.</li>
+        <li><strong>Tai nghe:</strong> để giọng đọc không lọt vào cuộc họp.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Free và Pro</h2>
+      <p>Bản miễn phí có đầy đủ dịch, phụ đề và giọng đọc, mỗi phiên tối đa 15 phút (bấm Bắt đầu lại để chạy tiếp). <strong>Pro</strong> bỏ giới hạn thời gian và mở khoá tóm tắt biên bản bằng AI. Mua ngay trong ứng dụng qua Microsoft Store.</p>
+    </section>
+
+    <section id="support">
+      <h2>Hỗ trợ / Support</h2>
+      <p>Email: <a href="mailto:tranxuandat.dev@gmail.com">tranxuandat.dev@gmail.com</a> — gửi kèm phiên bản (mục Giới thiệu trong app) và mô tả lỗi.</p>
+      <details>
+        <summary>Bấm Bắt đầu nhưng không thấy phụ đề?</summary>
+        <p>Vào mục <em>Âm thanh</em>: chọn "Toàn bộ âm thanh máy", hoặc chọn đúng app đang phát rồi bấm nút làm mới. Ở mục <em>Nâng cao</em>, hạ "Độ nhạy nhận tiếng nói" xuống khoảng 0,5 nếu tiếng nói nhỏ hoặc lẫn nhạc nền.</p>
+      </details>
+      <details>
+        <summary>Phụ đề hiện chậm?</summary>
+        <p>Bấm hồ sơ <em>Xem phim / video</em> ở trang chính, bật "Dùng GPU" ở mục <em>Nhận dạng giọng nói</em>, và chọn model Claude Haiku ở mục <em>Dịch</em> (nhanh nhất).</p>
+      </details>
+      <details>
+        <summary>Có cần báo cho người khác trong cuộc họp không?</summary>
+        <p>Có. App xử lý lời nói của mọi người trong cuộc họp. Hãy tuân thủ quy định nơi bạn làm việc và pháp luật địa phương, và báo cho người tham gia khi cần. Nếu không muốn lời nói rời khỏi máy, chọn bộ dịch chạy trên máy (Ollama / LM Studio).</p>
+      </details>
+      <details>
+        <summary>Đã mua Pro nhưng app vẫn báo bản miễn phí?</summary>
+        <p>Đăng nhập Microsoft Store bằng đúng tài khoản đã mua rồi mở lại app. Vẫn lỗi thì gửi email cho chúng tôi.</p>
+      </details>
+    </section>
+
+    <footer class="muted">
+      © 2026 dattx · <a href="privacy.html">Chính sách quyền riêng tư / Privacy / プライバシー</a> · Sử dụng mã nguồn mở: whisper.cpp, sherpa-onnx, NAudio
+    </footer>
+  </main>
+</body>
+</html>
